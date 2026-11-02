@@ -1,66 +1,56 @@
-<!DOCTYPE html>
+ 
+
+    <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheEssax's Webpage</title>
     <style>
-        /* Estilo general inspirado en sitios retro/indie web */
         body {
-            background-color: #dfdfdf; /* Fondo gris claro nostálgico */
+            background-color: #dfdfdf;
             background-image: radial-gradient(#c5c5c5 20%, transparent 20%), radial-gradient(#c5c5c5 20%, transparent 20%);
             background-size: 8px 8px;
-            background-position: 0 0, 4px 4px; /* Efecto de fondo con puntos retro */
+            background-position: 0 0, 4px 4px;
             color: #111111;
-            font-family: "Courier New", Courier, monospace; /* Tipografía estilo máquina de escribir */
+            font-family: "Courier New", Courier, monospace;
             margin: 0;
             padding: 20px;
         }
-
-        /* Contenedor principal que centra todo */
         .contenedor {
             max-width: 900px;
             margin: 0 auto;
             background-color: #ffffff;
-            border: 3px double #333333; /* Borde doble clásico */
+            border: 3px double #333333;
             padding: 20px;
-            box-shadow: 5px 5px 0px #888888; /* Sombra sólida sin difuminar */
+            box-shadow: 5px 5px 0px #888888;
         }
-
-        /* Encabezado */
         header {
             border-bottom: 3px double #333333;
             padding-bottom: 15px;
             margin-bottom: 20px;
             text-align: center;
         }
-
         header h1 {
             margin: 0;
             font-size: 2em;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
         header p {
             margin: 5px 0 0 0;
             font-style: italic;
         }
-
-        /* Diseño de dos columnas en pantallas más grandes */
         .layout {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-
         @media (min-width: 600px) {
             .layout {
                 flex-direction: row;
             }
         }
-
-        /* Barra lateral izquierda */
         .sidebar {
             flex: 1;
             border: 2px solid #333333;
@@ -68,28 +58,22 @@
             background-color: #fcfcfc;
             min-width: 200px;
         }
-
         .sidebar h3 {
             margin-top: 0;
             border-bottom: 1px dashed #333333;
             padding-bottom: 5px;
         }
-
         .sidebar ul {
             list-style-type: "⊹ ";
             padding-left: 20px;
             margin: 10px 0;
         }
-
         .sidebar li {
             margin-bottom: 8px;
         }
-
-        /* Columna de contenido principal (Blog) */
         .contenido-principal {
             flex: 3;
         }
-
         .entrada-blog {
             border: 2px solid #333333;
             background-color: #ffffff;
@@ -97,28 +81,24 @@
             margin-bottom: 20px;
             box-shadow: 3px 3px 0px #b5b5b5;
         }
-
         .entrada-blog h2 {
             margin-top: 0;
             font-size: 1.4em;
             color: #000000;
         }
-
         .fecha {
             color: #555555;
             font-size: 0.85em;
             margin-top: -10px;
             margin-bottom: 15px;
         }
-
-        /* Enlaces estilo retro */
         a {
             color: #0000ee;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
-            background-color: #ffff00; /* Resaltado amarillo al pasar el cursor */
+            background-color: #ffff00;
         }
     </style>
 </head>
@@ -133,32 +113,24 @@
 
         <div class="layout">
             
-            <!-- Barra lateral estilo crossixir -->
+            <!-- Barra lateral con el enlace a tu nuevo post -->
             <aside class="sidebar">
-                <h3>Navegación</h3>
+                <h3>Publicaciones</h3>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de mí</a></li>
-                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="post1.html">⊹ Mi primer post independiente</a></li>
                 </ul>
 
                 <h3>Info</h3>
                 <p>Sitio actualizado mediante GitHub desde mi celular.</p>
             </aside>
 
-            <!-- Entradas del Blog -->
+            <!-- Contenido de bienvenida en la página de inicio -->
             <main class="contenido-principal">
                 
                 <article class="entrada-blog">
-                    <h2>Mi primera publicación</h2>
+                    <h2>Bienvenido a la página principal ⊹</h2>
                     <div class="fecha">Noviembre 2, 2026</div>
-                    <p>¡Hola mundo! Este es el inicio de mi blog editado directamente desde GitHub. Aquí escribiré sobre tecnología, programación y mi proceso de aprendizaje.</p>
-                </article>
-
-                <article class="entrada-blog">
-                    <h2>Cómo crear una página web gratis</h2>
-                    <div class="fecha">Noviembre 2, 2026</div>
-                    <p>En esta entrada quiero contarles lo fácil que fue usar GitHub Pages para subir mi primer sitio web sin pagar nada y editándolo todo desde el navegador.</p>
+                    <p>Has llegado a mi rincón en la web. En la barra lateral izquierda (o arriba si estás en móvil) encontrarás los enlaces directos a mis publicaciones independientes.</p>
                 </article>
 
             </main>
