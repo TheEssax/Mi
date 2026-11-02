@@ -3,57 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog</title>
+    <title>TheEssax's Webpage</title>
     <style>
+        /* Estilo general inspirado en sitios retro/indie web */
         body {
-            background-color: #f4f4f9;
-            color: #333333;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #dfdfdf; /* Fondo gris claro nostálgico */
+            background-image: radial-gradient(#c5c5c5 20%, transparent 20%), radial-gradient(#c5c5c5 20%, transparent 20%);
+            background-size: 8px 8px;
+            background-position: 0 0, 4px 4px; /* Efecto de fondo con puntos retro */
+            color: #111111;
+            font-family: "Courier New", Courier, monospace; /* Tipografía estilo máquina de escribir */
             margin: 0;
             padding: 20px;
         }
-        header {
-            background-color: #2c3e50;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        .entrada-blog {
+
+        /* Contenedor principal que centra todo */
+        .contenedor {
+            max-width: 900px;
+            margin: 0 auto;
             background-color: #ffffff;
+            border: 3px double #333333; /* Borde doble clásico */
             padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 5px 5px 0px #888888; /* Sombra sólida sin difuminar */
         }
-        h2 {
-            color: #2c3e50;
+
+        /* Encabezado */
+        header {
+            border-bottom: 3px double #333333;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-style: italic;
+        }
+
+        /* Diseño de dos columnas en pantallas más grandes */
+        .layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .layout {
+                flex-direction: row;
+            }
+        }
+
+        /* Barra lateral izquierda */
+        .sidebar {
+            flex: 1;
+            border: 2px solid #333333;
+            padding: 15px;
+            background-color: #fcfcfc;
+            min-width: 200px;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            border-bottom: 1px dashed #333333;
+            padding-bottom: 5px;
+        }
+
+        .sidebar ul {
+            list-style-type: "⊹ ";
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 8px;
+        }
+
+        /* Columna de contenido principal (Blog) */
+        .contenido-principal {
+            flex: 3;
+        }
+
+        .entrada-blog {
+            border: 2px solid #333333;
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 0px #b5b5b5;
+        }
+
+        .entrada-blog h2 {
+            margin-top: 0;
+            font-size: 1.4em;
+            color: #000000;
+        }
+
         .fecha {
-            color: #7f8c8d;
-            font-size: 0.9em;
+            color: #555555;
+            font-size: 0.85em;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+
+        /* Enlaces estilo retro */
+        a {
+            color: #0000ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            background-color: #ffff00; /* Resaltado amarillo al pasar el cursor */
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>¡Bienvenidos a mi Blog!</h1>
-        <p>Este es mi espacio para compartir mis ideas y proyectos.</p>
-    </header>
+    <div class="contenedor">
+        
+        <header>
+            <h1>TheEssax ⊹ Place</h1>
+            <p>Bienvenido a mi rincón personal en la web.</p>
+        </header>
 
-    <article class="entrada-blog">
-        <h2>Mi primera publicación</h2>
-        <p class="fecha">Publicado el 2 de noviembre de 2026</p>
-        <p>¡Hola mundo! Este es el inicio de mi blog editado directamente desde GitHub. Aquí escribiré sobre tecnología, programación y mi proceso de aprendizaje.</p>
-    </article>
+        <div class="layout">
+            
+            <!-- Barra lateral estilo crossixir -->
+            <aside class="sidebar">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de mí</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
 
-    <article class="entrada-blog">
-        <h2>Cómo crear una página web gratis</h2>
-        <p class="fecha">Publicado el 2 de noviembre de 2026</p>
-        <p>En esta entrada quiero contarles lo fácil que fue usar GitHub Pages para subir mi primer sitio web sin pagar nada y editándolo todo desde el navegador.</p>
-    </article>
+                <h3>Info</h3>
+                <p>Sitio actualizado mediante GitHub desde mi celular.</p>
+            </aside>
+
+            <!-- Entradas del Blog -->
+            <main class="contenido-principal">
+                
+                <article class="entrada-blog">
+                    <h2>Mi primera publicación</h2>
+                    <div class="fecha">Noviembre 2, 2026</div>
+                    <p>¡Hola mundo! Este es el inicio de mi blog editado directamente desde GitHub. Aquí escribiré sobre tecnología, programación y mi proceso de aprendizaje.</p>
+                </article>
+
+                <article class="entrada-blog">
+                    <h2>Cómo crear una página web gratis</h2>
+                    <div class="fecha">Noviembre 2, 2026</div>
+                    <p>En esta entrada quiero contarles lo fácil que fue usar GitHub Pages para subir mi primer sitio web sin pagar nada y editándolo todo desde el navegador.</p>
+                </article>
+
+            </main>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
